@@ -1,0 +1,38 @@
+tables:
+  - name: sales
+    sql: {{ load_sql('sales') }}
+    description: "Sales transactions with product details and revenue calculations."
+
+    dimensions:
+      - name: sale_id
+        type: number
+        description: "Unique ID for each sale."
+        sql: SALE_ID
+        primary_key: true
+        public: true
+
+      - name: product_name
+        type: string
+        description: "Name of the product sold."
+        sql: PRODUCT_NAME
+
+      - name: category
+        type: string
+        description: "Product category."
+        sql: CATEGORY
+
+    measures:
+      - name: total_revenue
+        type: sum
+        sql: TOTAL_SALES
+        description: "Total revenue generated from sales."
+
+      - name: total_quantity
+        type: sum
+        sql: QUANTITY
+        description: "Total quantity of items sold."
+
+      - name: avg_price
+        type: avg
+        sql: PRICE
+        description: "Average selling price per product."

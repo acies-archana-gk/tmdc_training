@@ -1,0 +1,20 @@
+name: archanadepot
+version: v2alpha
+type: depot
+layer: user
+depot:
+  type: snowflake
+  description: This depot is for training purpose.
+  snowflake:
+    warehouse: training
+    url: KDCBYFR-ZW56493.snowflakecomputing.com
+    database: tmdc
+    account: KDCBYFR-ZW56493
+  external: true
+  secrets:
+    - name: sfdepot-r
+      keys:
+        - sfdepot-r
+    - name: sfdepot-rw
+      keys:
+        - sfdepot-rw

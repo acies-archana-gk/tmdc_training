@@ -1,0 +1,9 @@
+views:
+  - name: category_sales
+    description: "Aggregated sales data grouped by product category."
+    tables:
+      - join_path: sales
+        includes:
+          - category
+          - sum(total_sales) AS category_revenue
+          - sum(quantity) AS category_quantity
