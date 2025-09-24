@@ -15,7 +15,7 @@ lens:
     name: archanadepot
   repo:
     url: https://github.com/acies-archana-gk/tmdc_training
-    lensBaseDir: tmdc_training/tree/main/demo_dp/lens
+    lensBaseDir: tmdc_training/tree/main/demo_dp/lens/model
     syncFlags:
       - --ref=main
 
