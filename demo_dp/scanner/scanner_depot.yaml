@@ -1,15 +1,15 @@
 version: v1
-name: scanner-archanadepot
+name: archana-depot-scanner
 type: workflow
 tags:
   - Scanner
-title: Scan archana-depot
+title: Scanning snowflake depot for sales data
 description: |
   The purpose of this workflow is to scan snowflake and see if scanner works fine with a snowflake of depot.
 workflow:
   dag:
-    - name: scan-snowflake-db
-      title: Scan snowflake db
+    - name: scan-archana-db-depot
+      title: Scan snowflake db depot
       description: |
         The purpose of this job is to scan gateway db and see if scanner works fine with a snowflake type of depot.
       tags:

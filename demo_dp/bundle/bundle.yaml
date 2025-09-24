@@ -1,0 +1,12 @@
+name: archana-bundle
+version: v1beta
+type: bundle
+tags:
+  - dataproduct
+description: This bundle resource is for the sales insights lens deployment.
+layer: "user"
+bundle:
+  resources:
+    - id: lens
+      file: C:\Users\Archana\Documents\TMDC\tmdc_training\demo_dp\lens\lens_deployment.yaml
+      workspace: public
