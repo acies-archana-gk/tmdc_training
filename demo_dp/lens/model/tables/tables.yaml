@@ -21,6 +21,28 @@ tables:
         description: "Product category."
         sql: CATEGORY
 
+      - name: price
+        type: number
+        description: "Unit price of the product."
+        sql: PRICE
+
+      - name: quantity
+        type: number
+        description: "Number of units sold."
+        sql: QUANTITY
+
+      - name: sale_date
+        type: time
+        description: "Timestamp when the sale occurred."
+        sql: SALE_DATE
+
+      - name: total_sales
+        type: number
+        description: "Revenue for the row (PRICE * QUANTITY)."
+        sql: TOTAL_SALES
+
+        
+
     measures:
       - name: total_revenue
         type: sum
